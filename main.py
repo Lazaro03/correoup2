@@ -38,10 +38,10 @@ async def home(client, message):
             [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 		elif 'http://' in text or 'https://' in text:
-			await app.send_message(user_id, "Downloading")
+			await app.send_message(user_id, "📥Descargando📥")
 			filename = download(text)
 			await app.delete_messages(user_id, msg_id + 1)
-			await app.send_message(user_id,"Uploading "+ filename)
+			await app.send_message(user_id,"📤Uploading📤 "+ filename)
 			username = open(str(user_id)+"/username","r")
 			password = open(str(user_id)+"/password","r")
 			proxy = None
@@ -224,7 +224,7 @@ async def answer(client, callback_query):
 		await app.delete_messages(data[1],int(data[2]) + 2)
 		await app.send_message(data[1] ,start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(data[1])+":"+str(int(data[2])))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(data[1])+":"+str(int(data[2])))],[InlineKeyboardButton("FILES",callback_data="files:"+str(data[1])+":"+str(int(data[2])))]#,[InlineKeyboardButton("HELP",callback_data="help:"+str(data[1])+":"+str(int(data[2])))]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(data[1])+":"+str(int(data[2])))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(data[1])+":"+str(int(data[2])))],[InlineKeyboardButton("FILES",callback_data="files:"+str(data[1])+":"+str(int(data[2])))],[InlineKeyboardButton("HELP",callback_data="help:"+str(data[1])+":"+str(int(data[2])))]
         ]))
  
 print("Iniciado")
