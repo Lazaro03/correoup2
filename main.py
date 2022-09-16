@@ -35,7 +35,7 @@ async def home(client, message):
 					start = "**UCLV New** \nUser: "+username.read()+" \nPassword: "+password.read()+"\n Proxy: ON"
 			await app.send_message(user_id, start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 		elif 'http://' in text or 'https://' in text:
 			await app.send_message(user_id, "📥Descargando📥")
@@ -80,7 +80,7 @@ async def home(client, message):
 					start = "**UCLV New** \nUser: "+username.read()+" \nPassword: "+password.read()+"\n Proxy: ON"
 			await app.send_message(user_id, start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 		elif "socks5://" in text:
         			log = open(str(user_id)+"log","r")
@@ -106,7 +106,7 @@ async def home(client, message):
         			await app.delete_messages(user_id, msg_id)
         			await app.send_message(user_id, start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 		elif ":" in text:
 		      	log = open(str(user_id)+"log","r")
@@ -140,7 +140,7 @@ async def home(client, message):
 		      			await app.delete_messages(user_id, msg_id)
 		      			await app.send_message(user_id, start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 		      	if "account" in logr:
 		      		username = open(str(user_id)+"/username", "w")
@@ -165,7 +165,7 @@ async def home(client, message):
 		      		await app.delete_messages(user_id, int(msg_id) - 1)
 		      		await app.send_message(user_id, start, reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))]#,[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
+            [InlineKeyboardButton("ACCOUNT",callback_data="account:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("PROXY",callback_data="proxy:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("FILES",callback_data="files:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("AYUDA",callback_data="help:"+str(user_id)+":"+str(msg_id))],[InlineKeyboardButton("Studio Kanami", url="https://t.me/studiokanami")]
         ]))
 	else:
 		await app.send_message(user_id, 'Access dennied')
